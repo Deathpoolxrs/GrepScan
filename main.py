@@ -13,7 +13,7 @@ if not os.path.isdir(scan_path):
     exit(1)
 
 # Get the output directory from the user
-default_output_dir = "../Scan_Results/Grep"
+default_output_dir = os.path.join("..", "Scan_Results", "Grep")
 output_dir = input(f"Enter the output directory (default: {default_output_dir}): ") or default_output_dir
 ensure_dir_exists(output_dir)
 
